@@ -1,0 +1,33 @@
+:root{
+    /*COLORZ*/
+    --magenta: #E50045;
+    --azul: #00eeff;
+    --beige: #ece2c6;
+    --negro-1: #1f1f1f;
+    --negro-2: #1d1d20;
+    --blue: #081B29;
+    --nuovo: #151D20;
+    /*FONTS*/
+    --text: 'Kodchasan', sans-serif;
+    --intro: 'Audiowide', cursive;
+    --text-cuadrado: 'Orbitron', sans-serif;
+}
+.i-text{
+    font-family: var(--text);
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #e0e0e0;
+}
+.n-text{
+    font-family: var(--text);
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    color: #e0e0e0;
+}
+.fusion{
+    text-shadow: 2px 2px 2px var(--magenta),
+                 -1px -1px 2px var(--azul);
+}
