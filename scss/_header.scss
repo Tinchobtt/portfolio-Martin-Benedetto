@@ -14,8 +14,9 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 6;
+    z-index: 2;
     .logo-container{
+        z-index: 6;
         .logo-bars{
             display: flex;
             justify-content: center;
@@ -69,7 +70,7 @@
         height: 100vh;
         background-color: var(--negro-1);
         transform: translateX(100vw);
-        transition: all .5s ease-in-out;
+        transition: transform .6s ease-in-out;
         z-index: 1;
         overflow-x: hidden;
         .nav-bar{
@@ -88,9 +89,10 @@
         .redes{
             display: flex;
             justify-content: center;
+            margin-bottom: 4em;
             padding: 2em;
             .fa-instagram, .fa-whatsapp, .fa-envelope, .fa-linkedin{
-                font-size: 25px;
+                font-size: 30px;
                 padding-left: 1em;
                 color: var(--beige);
                 transition: .5s;

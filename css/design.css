@@ -35,6 +35,20 @@
   text-shadow: 2px 2px 2px var(--magenta), -1px -1px 2px var(--azul);
 }
 
+.btn {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin: 3em auto;
+  background-color: transparent;
+  border: 2px solid var(--beige);
+  border-radius: 5px;
+  color: var(--beige);
+  font-family: var(--text);
+  font-size: 18px;
+  font-weight: 200;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -66,6 +80,9 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 2;
+}
+.header .logo-container {
   z-index: 6;
 }
 .header .logo-container .logo-bars {
@@ -120,7 +137,7 @@ body {
   height: 100vh;
   background-color: var(--negro-1);
   transform: translateX(100vw);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   z-index: 1;
   overflow-x: hidden;
 }
@@ -140,10 +157,11 @@ body {
 .header .nav .redes {
   display: flex;
   justify-content: center;
+  margin-bottom: 4em;
   padding: 2em;
 }
 .header .nav .redes .fa-instagram, .header .nav .redes .fa-whatsapp, .header .nav .redes .fa-envelope, .header .nav .redes .fa-linkedin {
-  font-size: 25px;
+  font-size: 30px;
   padding-left: 1em;
   color: var(--beige);
   transition: 0.5s;
@@ -200,7 +218,7 @@ body {
 .intro span {
   display: inline-block;
   font-family: var(--intro);
-  font-size: 36px;
+  font-size: 38px;
   color: var(--beige);
 }
 .intro .animated-texts {
@@ -222,9 +240,6 @@ body {
   animation: scale 1.5s infinite;
   animation-timing-function: ease-out;
 }
-.intro .animated-texts .web-developer .web {
-  margin: 0 1.5em;
-}
 .intro .animated-texts .web-developer .web .animation-scale:nth-child(1) {
   animation-delay: 0s;
 }
@@ -233,6 +248,9 @@ body {
 }
 .intro .animated-texts .web-developer .web .animation-scale:nth-child(3) {
   animation-delay: 0.2s;
+}
+.intro .animated-texts .web-developer .developer {
+  margin: 0 1.5em;
 }
 .intro .animated-texts .web-developer .developer .animation-scale:nth-child(1) {
   animation-delay: 0.3s;
@@ -305,6 +323,20 @@ body {
   font-family: var(--text);
   font-weight: 800;
 }
+.intro .indicador {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5em;
+  color: #fff;
+  opacity: 0.2;
+  animation: arrow 2s ease-in-out infinite;
+}
+
+.box {
+  color: wheat;
+}
 
 @keyframes scale {
   0% {
@@ -337,9 +369,21 @@ body {
     transform: translateY(-7px);
   }
 }
-@media (min-width: 381px) {
-  .web {
-    margin: 0 1.5em 0 0;
+@keyframes arrow {
+  0% {
+    transform: translate(-50%, -10px);
+  }
+  50% {
+    transform: translate(-50%, 0px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(-50%, -10px);
+  }
+}
+@media (min-width: 425px) {
+  .developer {
+    margin: 0 0 0 1.5em !important;
   }
 }
 
