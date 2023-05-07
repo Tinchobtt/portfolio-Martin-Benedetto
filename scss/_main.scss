@@ -122,9 +122,11 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 3.5em;
-        color: #fff;
         opacity: .2;
         animation: arrow 2s ease-in-out infinite;
+        a{
+            color: #fff;
+        }
     }
 }
 @keyframes scale {
