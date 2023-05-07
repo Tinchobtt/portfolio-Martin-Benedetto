@@ -5,7 +5,12 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color: var(--nuovo);
+}
+section{
+    width: 100%;
+    padding: 1em;
 }

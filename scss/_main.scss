@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 1em;
     height: 100vh;
+    .i-text{
+        text-align: center;
+    }
     span{
         display: inline-block;
         font-family: var(--intro);
@@ -124,9 +126,6 @@
         opacity: .2;
         animation: arrow 2s ease-in-out infinite;
     }
-}
-.box{
-    color: wheat;
 }
 @keyframes scale {
     0% {
