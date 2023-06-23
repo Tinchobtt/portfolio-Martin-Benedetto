@@ -1,20 +1,13 @@
-.gradient{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    width: 200vw;
-    height: 200vh;
-    background: radial-gradient(circle, rgba(28,63,69,1) 0%, rgba(27,58,63,1) 24%, rgba(24,43,48,1) 42%, rgba(22,33,36,1) 54%, rgba(21,29,32,1) 79%);
-    z-index: -1;
-}
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 65px;
     position: fixed;
     top: 0;
     z-index: 2;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: .25);
     backdrop-filter: blur(5px);
     .logo-container{
         z-index: 6;
@@ -22,10 +15,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 3em;
-            height: 3em;
-            border: 1px solid var(--beige);
-            margin: .5em;
+            width: 3rem;
+            height: 3rem;
+            border: 2px solid var(--blue);
+            margin: .5rem;
             border-radius: 3px;
             cursor: pointer;
             transition: all .5s;
@@ -33,7 +26,7 @@
                 display: block;
                 width: 3px;
                 height: 25px;
-                background-color: var(--beige);
+                background-color: var(--blue);
                 border-radius: 2px;
             }
         }
@@ -60,39 +53,39 @@
     .nav{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         position: fixed;
-        top: 0;
+        top: 65px;
         right: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--nuovo);
-        transform: translateX(100vw);
+        width: 70%;
+        padding: 1rem;
+        border-radius: 0 0 0 15px;
+        background-color: var(--white);
+        transform: translateX(70vw);
         transition: transform .6s ease-in-out;
+        box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: .5);
         z-index: 4;
         overflow-x: hidden;
         .nav-bar{
             width: 100%;
-            padding-top: 8em;
             .nav-item{ 
                 list-style: none;
-                padding: 2em;
+                margin-bottom: 2rem;
                 .nav-link{
                     text-decoration: none;
                     font-size: 22px;
-                    color: var(--beige);
+                    font-weight: 500;
+                    color: var(--blue);
                 }
             }
         }
         .redes{
             display: flex;
-            justify-content: center;
-            margin-bottom: 4em;
-            padding: 2em;
+            justify-content: space-evenly;
+            margin-top: 1rem;
+            padding: 1rem;
             .fa-instagram, .fa-whatsapp, .fa-envelope, .fa-linkedin{
-                font-size: 30px;
-                padding-left: 1em;
-                color: var(--beige);
+                font-size: 20px;
+                color: var(--blue);
                 transition: .5s;
                 &:hover{
                     transform: translateY(-10px);
@@ -110,12 +103,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
-        width: 3em;
-        height: 3em;
-        margin: .5em;
-        padding: .5em;
-        border: 1px solid var(--beige);
+        align-items: end;
+        width: 3rem;
+        height: 3rem;
+        margin: .5rem;
+        padding: .5rem;
         border-radius: 5px;
         cursor: pointer;
         transition: .5s;
@@ -124,11 +116,17 @@
             display: block;
             width: 100%;
             height: 3px;
-            background-color: var(--beige);
+            background-color: var(--blue);
             transform-origin: 0px 100%;
             transition-property: translate rotate opacity;
             transition-duration: 500ms;
             border-radius: 2px;
+        }
+        .line2-bar{
+            width: 75%;
+        }
+        .line3-bar{
+            width: 45%;
         }
         .activeLine1-bar{
             transform: rotate(45deg) translate(2px, -3px); 
@@ -138,6 +136,7 @@
             margin-left: -30px; 
         }
         .activeLine3-bar{
+            width: 100%;
             transform: rotate(-45deg) translate(3px, 4px);
         }
     }

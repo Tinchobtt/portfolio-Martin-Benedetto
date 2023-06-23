@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: var(--text);
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body{
-    background-color: var(--nuovo);
+    background-color: var(--white);
 }
 section{
     width: 100%;

@@ -1,58 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root{
     /*COLORZ*/
-    --magenta: #E50045;
-    --azul: #00eeff;
-    --beige: #ece2c6;
-    --negro-1: #1f1f1f;
-    --negro-2: #1d1d20;
-    --blue: #081B29;
+    --white: #F4F4F4;
+    --blue: #0A5575;
+    --skyblue : #00B2FF;
     --nuovo: #151D20;
-    --green: #1c3f45;
     /*FONTS*/
-    --text: 'Kodchasan', sans-serif;
-    --intro: 'Audiowide', cursive;
-    --text-cuadrado: 'Orbitron', sans-serif;
-}
-.text{
-    font-family: var(--text);
-    font-weight: 200;
-    letter-spacing: 1px;
-    color: #e0e0e0;
-}
-.t-text{
-    @extend .text; 
-    font-size: 26px; 
-    text-align: start;
-}
-.i-text{
-    @extend .text; 
-    font-size: 16px;
-}
-.n-text{
-    @extend .text; 
-    font-size: 12px;
-    text-align: justify;
-}
-.fusion{
-    text-shadow: 2px 2px 2px var(--magenta),
-                 -1px -1px 2px var(--azul);
-}
-.shadow{
-    box-shadow: 0 5px 20px rgba($color: #000, $alpha: .5);
-}
-.btn{
-    width: 150px;
-    height: 50px;
-    margin: 3em auto;
-    background-color: transparent;
-    border: 2px solid var(--beige);
-    border-radius: 5px;
-    cursor: pointer;
-    a{
-        color: var(--beige);
-        text-decoration: none;
-        font-family: var(--text);
-        font-size: 18px;
-        font-weight: 200;
-    }
+    --text: 'Montserrat', sans-serif;
+    --title: 'Audiowide', cursive;
 }
