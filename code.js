@@ -11,3 +11,33 @@ document.querySelector('.bars-menu').addEventListener('click', ()=>{
     line3.classList.toggle('activeLine3-bar');
     nav.classList.toggle('nav-bar-show');
 })
+
+//CONTACT
+const inputName = document.querySelector('#name');
+const inputEmail = document.querySelector('#email');
+const inputMessage = document.querySelector('#message');
+
+inputName.addEventListener('focus', ()=>{
+    inputName.previousElementSibling.classList.add('label-up')
+})
+inputEmail.addEventListener('focus', ()=>{
+    inputEmail.previousElementSibling.classList.add('label-up')
+})
+inputMessage.addEventListener('focus', ()=>{
+    inputMessage.previousElementSibling.classList.add('label-up')
+})
+inputName.addEventListener('blur', ()=>{
+    if(inputName.value === ''){
+        inputName.previousElementSibling.classList.remove('label-up')
+    }
+})
+inputEmail.addEventListener('blur', ()=>{
+    if(inputEmail.value === ''){
+        inputEmail.previousElementSibling.classList.remove('label-up')
+    }
+})
+inputMessage.addEventListener('blur', ()=>{
+    if(inputMessage.value === ''){
+        inputMessage.previousElementSibling.classList.remove('label-up')
+    }
+})

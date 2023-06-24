@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: var(--text);
+    font-family: var(--text);
 }
 html{
     scroll-behavior: smooth;
@@ -13,5 +13,6 @@ body{
 }
 section{
     width: 100%;
+    margin: 4rem 0;
     padding: 1em;
 }

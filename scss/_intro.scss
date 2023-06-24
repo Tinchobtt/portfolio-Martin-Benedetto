@@ -1,12 +1,13 @@
-.intro{
+#intro{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: calc(100vh - 100px);
-    margin-top: 100px;
+    margin-top: 65px;
     h2{
         font-family: var(--text);
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
         color: var(--blue);
         text-align: center;
@@ -14,7 +15,7 @@
     }
     h1{
         font-family: var(--text);
-        font-size: 28px;
+        font-size: 40px;
         font-weight: 600;
         text-align: center;
         margin: 1rem 0;
@@ -24,7 +25,7 @@
     }
     p{
         font-family: var(--text);
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
         color: var(--blue);
         text-align: center;
@@ -37,12 +38,11 @@
         margin-top: 3rem;
         padding: 4px;
         .btn{
-            width: 130px;
-            height: 40px;
             border: 3px solid;
             border-radius: 10px;
             background-color: var(--white);
             border: none;
+            padding: 10px 15px;
             cursor: pointer;
             a{
                 font-size: 20px;
