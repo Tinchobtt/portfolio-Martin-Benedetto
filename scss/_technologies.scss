@@ -9,7 +9,7 @@
         margin-top: 3rem;
         .tech{
             img{
-                width: 3rem;
+                width: clamp(3rem, 5vw, 4rem);
                 transition: color .3s ease-in-out;
             }
             &:hover img{
@@ -27,5 +27,12 @@
     }
     100%{
         transform: translateY(0);
+    }
+}
+@media (min-width: 1024px){
+    #technologies{
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 8rem;
     }
 }

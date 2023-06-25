@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1440px;
     height: 65px;
     position: fixed;
     top: 0;
@@ -82,7 +83,7 @@
             justify-content: space-evenly;
             margin-top: 1rem;
             padding: 1rem;
-            .fa-instagram, .fa-whatsapp, .fa-envelope, .fa-linkedin{
+            .fa-github, .fa-whatsapp, .fa-envelope, .fa-linkedin{
                 font-size: 20px;
                 color: var(--blue);
                 transition: .5s;
@@ -136,6 +137,51 @@
         .activeLine3-bar{
             width: 100%;
             transform: rotate(-45deg) translate(3px, 5px);
+        }
+    }
+}
+@media (min-width: 768px){
+    .header{
+        height: 100px;
+        padding: 0 2rem;
+        .nav{
+            justify-content: space-between;
+            position: unset;
+            width: auto;
+            height: 100%;
+            padding: 1rem;
+            border-radius: 0 0 0 0;
+            transform: translateX(0vw);
+            box-shadow: none;
+            .nav-bar{
+                display: flex;
+                .nav-item{ 
+                    margin-bottom: 0;
+                    margin-left: 1rem;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    transition: box-shadow .2s ease-in-out;
+                    &:hover{
+                        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .1);
+                    }
+                }
+            }
+            .redes{
+                display: flex;
+                justify-content: end;
+                margin-top: 0;
+                padding: 0;
+                order: -1;
+                .fa-github, .fa-whatsapp, .fa-envelope, .fa-linkedin{
+                    margin-left: 1rem;
+                }
+                .fa-whatsapp{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .bars-menu{
+            display: none;
         }
     }
 }

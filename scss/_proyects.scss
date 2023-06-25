@@ -45,3 +45,47 @@
         }
     }
 }
+@media (min-width: 1024px){
+    #proyects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .proyects-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 4rem;
+            margin-top: 6rem;
+            width: 80%;
+            .proyect{
+                display: grid;
+                grid-template-rows: 40px 180px;
+                align-items: center;
+                height: 250px;
+                box-shadow: 0 5px 10px rgba($color: #000000, $alpha: .3);
+                margin: 0;
+                padding: 1rem;
+                border-radius: 10px;
+                transition: transform .5s ease-in-out;
+                &:hover{
+                    transform: scale(1.05,1.05);
+                }
+                .proyect-info{
+                    display: flex;
+                    justify-content: space-between;
+                    h3{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    a{
+                        text-decoration: none;
+                        svg{
+                            font-size: 18px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
