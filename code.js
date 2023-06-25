@@ -1,16 +1,40 @@
 AOS.init();
 //BARS MENU
 let nav = document.querySelector('.nav');
+let bars = document.querySelector('.bars-menu');
 let line1 = document.querySelector('.line1-bar');
 let line2 = document.querySelector('.line2-bar');
 let line3 = document.querySelector('.line3-bar');
+let state = false;
 
-document.querySelector('.bars-menu').addEventListener('click', ()=>{
-    line1.classList.toggle('activeLine1-bar');
-    line2.classList.toggle('activeLine2-bar');
-    line3.classList.toggle('activeLine3-bar');
-    nav.classList.toggle('nav-bar-show');
+const openBarsMenu = ()=>{
+    line1.classList.add('activeLine1-bar');
+    line2.classList.add('activeLine2-bar');
+    line3.classList.add('activeLine3-bar');
+    nav.classList.add('nav-bar-show');
+    state = true;
+}
+const closeBarsMenu = ()=>{
+    line1.classList.remove('activeLine1-bar');
+    line2.classList.remove('activeLine2-bar');
+    line3.classList.remove('activeLine3-bar');
+    nav.classList.remove('nav-bar-show');
+    state = false;
+}
+
+bars.addEventListener('click', ()=>{
+    if(!state){
+        openBarsMenu();
+    }else{
+        closeBarsMenu()
+    }
 })
+document.addEventListener('click', (event)=> {
+    let target = event.target;
+    if (!target.closest('.header') && state) { // Comprobar si el clic fue fuera del menú
+        closeBarsMenu()
+    }
+  });
 
 //CONTACT
 const inputName = document.querySelector('#name');
