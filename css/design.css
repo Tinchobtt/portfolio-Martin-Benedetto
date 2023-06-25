@@ -224,7 +224,7 @@ section {
   transform: rotate(-45deg) translate(3px, 5px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header {
     height: 100px;
     padding: 0 2rem;
@@ -405,7 +405,7 @@ section {
 }
 #proyects .proyects-container .proyect {
   display: grid;
-  grid-template-rows: 40px 180px;
+  grid-template-rows: 38px 180px;
   align-items: center;
   width: 100%;
   height: 250px;
@@ -443,7 +443,19 @@ section {
   border-radius: 10px;
   object-fit: cover;
 }
-@media (min-width: 1024px) {
+@media (min-width: 425px) {
+  #proyects .proyects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #proyects .proyects-container .proyect {
+    grid-template-rows: 48px 220px;
+    max-width: 430px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
   #proyects {
     display: flex;
     flex-direction: column;
@@ -455,7 +467,7 @@ section {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 4rem;
     margin-top: 6rem;
-    width: 80%;
+    width: 100%;
   }
   #proyects .proyects-container .proyect {
     display: grid;
