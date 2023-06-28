@@ -65,3 +65,24 @@ inputMessage.addEventListener('blur', ()=>{
         inputMessage.previousElementSibling.classList.remove('label-up')
     }
 })
+
+const form = document.querySelector('#form');
+const submit = document.querySelector('#submit');
+
+form.addEventListener('submit', (e)=> {
+   e.preventDefault();
+
+   submit.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_h70ajfd';
+
+   emailjs.sendForm(serviceID, templateID, form)
+    .then(() => {
+        submit.value = 'Send';
+        alert('Sent!');
+    }, (err) => {
+        submit.value = 'Send';
+        alert(JSON.stringify(err));
+    });
+});

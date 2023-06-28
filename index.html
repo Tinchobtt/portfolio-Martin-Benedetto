@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/design.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Martin Benedetto</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('v6GrIG9lhAtya6sJM') </script>
 </head>
 <body>
     <header class="header">
@@ -163,28 +165,28 @@
             <div class="title-container">
                 <h2 class="title">Contact me!</h2>
             </div>
-            <form action="">
+            <form id="form">
                 <div class="input-box">
                     <label class="label-down" for="name">Name / Company</label>
-                    <input id="name" type="text" required>
+                    <input id="name" type="text" name="from_name" required>
                 </div>
                 <div class="input-box">
                     <label class="label-down" for="email">E-mail</label>
-                    <input id="email" type="text" required>
+                    <input id="email" type="text" name="email_id" required>
                 </div>
                 <div class="input-box">
                     <label class="label-down" for="message">Message</label>
-                    <textarea id="message" required></textarea>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
                 <div class="btn-gradient">
                     <input id="submit" type="submit" value="Send">
                 </div>
             </form>
             <div class="redes">
-                <a href="#" class="email"><i class="fa-regular fa-envelope"></i></a>
-                <a href="#" class="in"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="wpp"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://instagram.com/tinchobtt?igshid=YmMyMTA2M2Y=" class="ig"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Tinchobtt" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="martin.benedetto07@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/martin-benedetto-9b7ba5197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/393312091265" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </section>
         <div class="arrow-up"><a href="#intro"><i class="fa-solid fa-chevron-up"></i></a></div>

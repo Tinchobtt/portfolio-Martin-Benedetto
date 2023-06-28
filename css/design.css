@@ -25,7 +25,7 @@
 }
 
 .arrow-up {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -46,6 +46,11 @@
   opacity: 1;
 }
 
+@media (min-width: 1024px) {
+  .arrow-up {
+    display: flex;
+  }
+}
 * {
   margin: 0;
   padding: 0;
